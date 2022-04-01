@@ -1,0 +1,330 @@
+{
+   "alwaysActive" : [
+      {
+         "name" : "Imperium Mouse",
+         "vendor" : 4660,
+         "product" : 1,
+         "version" : 1,
+         "input" : [
+            {
+               "type" : 1,       // EV_KEY
+               "code" : 272,     // BTN_LEFT
+               "value" : 16
+            },
+            {
+               "type" : 1,       // EV_KEY
+               "code" : 273,     // BTN_RIGHT
+               "value" : 1
+            },
+            {
+               "type" : 1,       // EV_KEY
+               "code" : 274,     // BTN_MIDDLE
+               "value" : 19
+            },
+            {
+               "type" : 2,       // EV_REL
+               "code" : 0,       // REL_X
+               "value" : 2
+            },
+            {
+               "type" : 2,       // EV_REL
+               "code" : 1,       // REL_Y
+               "value" : 3
+            }
+         ]
+      }
+   ],
+   "controllerConfig" : {
+      "changeConfigButton" : 12,
+      "deviceGroup": [
+         {
+            "device": [
+               {
+                  "name": "Imperium Gamepad",
+                  "vendor": 4660,
+                  "product": 2,
+                  "version": 1,
+                  "input": [
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 304,   // BTN_A
+                        "value": 17
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 305,   // BTN_B
+                        "value": 18
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 307,   // BTN_X
+                        "value": 19
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 308,   // BTN_Y
+                        "value": 16
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 310,   // BTN_TL
+                        "value": 1
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 311,   // BTN_TR
+                        "value": 2
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 315,   // BTN_START
+                        "value": 10
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 544,   // BTN_DPAD_UP
+                        "value": 5
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 545,   // BTN_DPAD_DOWN
+                        "value": 8
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 546,   // BTN_DPAD_LEFT
+                        "value": 9
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 547,   // BBTN_DPAD_RIGHT
+                        "value": 11
+                     },
+                     {
+                        "type": 2,     // EV_REL
+                        "code": 7,     // REL_DIAL
+                        "value": 0
+                     },
+                     {
+                        "type": 3,     // EV_ABS
+                        "code": 8,     // ABS_WHEEL
+                        "value": 0,
+                        "min": 0,
+                        "max": 255
+                     }
+                  ]
+               },
+               {
+                  "name": "Imperium Gamepad",
+                  "vendor": 4660,
+                  "product": 2,
+                  "version": 1,
+                  "input": [
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 304,   // BTN_A
+                        "value": 7
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 305,   // BTN_B
+                        "value": 13
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 307,   // BTN_X
+                        "value": 14
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 308,   // BTN_Y
+                        "value": 15
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 310,   // BTN_TL
+                        "value": 3
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 311,   // BTN_TR
+                        "value": 4
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 315,   // BTN_START
+                        "value": 6
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 544,   // BTN_DPAD_UP
+                        "value": 0
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 545,   // BTN_DPAD_DOWN
+                        "value": 22
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 546,   // BTN_DPAD_LEFT
+                        "value": 21
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 547,   // BBTN_DPAD_RIGHT
+                        "value": 20
+                     },
+                     {
+                        "type": 2,     // EV_REL
+                        "code": 7,     // REL_DIAL
+                        "value": 1
+                     },
+                     {
+                        "type": 3,     // EV_ABS
+                        "code": 8,     // ABS_WHEEL
+                        "value": 1,
+                        "min": 0,
+                        "max": 255
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "device": [
+               {
+                  "name": "Imperium All In One Gamepad",
+                  "vendor": 4660,
+                  "product": 3,
+                  "version": 1,
+                  "input": [
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 304,   // BTN_A
+                        "value": 17
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 305,   // BTN_B
+                        "value": 18
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 307,   // BTN_X
+                        "value": 19
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 308,   // BTN_Y
+                        "value": 16
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 310,   // BTN_TL
+                        "value": 1
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 311,   // BTN_TR
+                        "value": 2
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 315,   // BTN_START
+                        "value": 10
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 544,   // BTN_DPAD_UP
+                        "value": 5
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 545,   // BTN_DPAD_DOWN
+                        "value": 8
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 546,   // BTN_DPAD_LEFT
+                        "value": 9
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 547,   // BBTN_DPAD_RIGHT
+                        "value": 11
+                     },
+                     {
+                        "type": 2,     // EV_REL
+                        "code": 7,     // REL_DIAL
+                        "value": 0
+                     },
+                     {
+                        "type": 3,     // EV_ABS
+                        "code": 8,     // ABS_WHEEL
+                        "value": 0,
+                        "min": 0,
+                        "max": 255
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 704,   // BTN_TRIGGER_HAPPY1 (A)
+                        "value": 7
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 705,   // BTN_TRIGGER_HAPPY2 (B)
+                        "value": 13
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 706,   // BTN_TRIGGER_HAPPY3 (X)
+                        "value": 14
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 707,   // BTN_TRIGGER_HAPPY4 (Y)
+                        "value": 15
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 708,   // BTN_TRIGGER_HAPPY5 (TL)
+                        "value": 3
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 709,   // BTN_TRIGGER_HAPPY6 (TR)
+                        "value": 4
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 710,   // BTN_TRIGGER_HAPPY7 (START)
+                        "value": 6
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 711,   // BTN_TRIGGER_HAPPY8 (UP)
+                        "value": 0
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 712,   // BTN_TRIGGER_HAPPY9 (DOWN)
+                        "value": 22
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 713,   // BTN_TRIGGER_HAPPY10 (LEFT)
+                        "value": 21
+                     },
+                     {
+                        "type": 1,     // EV_KEY
+                        "code": 714,   // BTN_TRIGGER_HAPPY11 (RIGHT)
+                        "value": 20
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+}

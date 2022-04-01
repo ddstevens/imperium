@@ -1,0 +1,2 @@
+SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="1234", ATTR{idProduct}=="0000", RUN+="/usr/bin/touch /var/run/imperium"
+SUBSYSTEM=="hid", ACTION=="remove", ENV{HID_UNIQ}=="Imperium V1.0", RUN+="/usr/bin/rm /var/run/imperium"
