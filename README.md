@@ -30,7 +30,7 @@ There is a hardware config include file for each supported microcontroller. That
 
 This is where the number of encoders (and their ppr) and the inputs for each port is specified.
 
-The inputs for a port are packed together in the order you define them. Each port's data is then packed together the other port's data alphabetically (e.g. port A, port B, etc.).
+The inputs for a port are packed together in the order you define them. Each port's data is then packed together with the other port's data alphabetically (e.g. port A, port B, etc.).
 
 For example if your hardware config had the following definitions:
 
