@@ -111,7 +111,7 @@ Download and extract the Imperium codebase.
 
 Install [Arduino for the STM32](https://github.com/stm32duino/Arduino_Core_STM32). Follow their install directions.
 
-Install my fork of "[TinyUSB for Arduino](https://github.com/ddstevens/Adafruit_TinyUSB_Arduino)". Make sure to update your local Arduino install per the readme. 
+Install my fork of [TinyUSB for Arduino](https://github.com/ddstevens/Adafruit_TinyUSB_Arduino). Make sure to update your local Arduino install per the readme. 
 
 Open the Imperium Arduino project (imperium/mcu/imperium).
 
