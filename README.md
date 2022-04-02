@@ -167,6 +167,8 @@ Restart MiSTer and you should be up and running.
 
 # Operation
 
+The included config file defines two different mappings. The first mapping splits the controls between two gamepads and a mouse. The second mapping defines one gamepad which has all the button and joystick inputs, the first spinner and defines a mouse.
+
 To switch the active controller mapping press the "change controller mapping button" you defined in the config JSON. Imperium will advance to next mapping, starting over at the beginning after the last mapping.
 
 # PCB
