@@ -191,7 +191,7 @@ MCU: [WeAct Studio STM32F411CE](https://github.com/WeActTC/MiniSTM32F4x1)
 
 The story of this project should give some insight into why things ended up they way they are.
 
-When MiSTer's Atari 7800 core was updated with spinner support I thought it would be a fun project to add spinners to my Micro Center Atari Fight Stick.
+When MiSTer's Atari 7800 core was updated with spinner support I thought it would be a fun project to add spinners to my Micro Center Atari Fightstick.
 
 While I was at it, I decided to replace the trackball. The included 2.5" trackball had its own embedded controller which meant another USB cable. If the new adaptor could handle a trackball as well as a spinner I could eliminate that cable. So swapped in a SuzoHapp 3" high lip trackball (56-0100-11HL). It is almost a perfect fit. The bolt pattern is identical, but I had to widen the cutout for the ball by maybe a millimeter.
 
