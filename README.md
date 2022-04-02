@@ -48,7 +48,7 @@ const int8_t inputPinC[NUM_C_INPUTS] = {PC14, PC13};
 const int16_t inputPinMaskC[NUM_C_INPUTS] = {1<<14, 1<<13};
 ```
 
-The bit array sent to the linux driver would look like this:
+The bit array sent to the Linux driver would look like this:
 
 PA0, PA9, PA10, PB0, PC14, PC13
 
@@ -209,7 +209,7 @@ After the Arduino code was updated to use the new library I had a working adapto
 
 The problem is you can't send multiple HID reports in a single USB update; they must be sent serially. If there are changes for all three devices the best case latency goes from 1ms to 3ms. Since the gold standard seems to be 1ms or less I decided to scrap everything and change my approach.
 
-The adaptor is no longer a composite HID device. Instead, it consists of two parts. A raw HID device, and a user space Linux driver. All input data is bundled in a single raw HID report and sent. When the user space linux driver receives the raw HID report it splits it into multiple input devices.
+The adaptor is no longer a composite HID device. Instead, it consists of two parts. A raw HID device, and a user space Linux driver. All input data is bundled in a single raw HID report and sent. When the user space Linux driver receives the raw HID report it splits it into multiple input devices.
 
 This solves the latency issue and allows for quite a bit of flexibility.
 
