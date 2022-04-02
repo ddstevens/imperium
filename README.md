@@ -219,4 +219,4 @@ There are other STM32 boards that have a bunch of GPIO pins > 70. Support for th
 
 [Niels3RT's SpinJoy adaptor](https://github.com/Niels3RT/SpinJoy) for a simple but effective debounce algorithm.
 
-[Sorg's paddle adaptor](https://github.com/MiSTer-devel/Retro-Controllers-USB-MiSTer) for being the basis of Niels3RT project and MiSTer.
+[Sorg's paddle adaptor](https://github.com/MiSTer-devel/Retro-Controllers-USB-MiSTer) for being the basis of Niels3RT's project and MiSTer.
