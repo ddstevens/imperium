@@ -193,7 +193,7 @@ The story of this project should give some insight into why things ended up they
 
 When MiSTer's Atari 7800 core was updated with spinner support I thought it would be a fun project to add spinners to my Micro Center Atari Fight Stick.
 
-The trackball that comes with the Micro Center fight stick had its own embedded controller. To minimize the number of USB cables I replaced the 2.5" trackball with a SuzoHapp 3" high lip trackball (56-0100-11HL). It is almost a perfect fit. The bolt pattern is identical, but I had to widen the ball opening by maybe a millimeter.
+While I was at it, I decided to replace the trackball. The included 2.5" trackball had its own embedded controller which meant another USB cable. If the new adaptor could handle a trackball as well as a spinner I could eliminate that cable. So swapped in a SuzoHapp 3" high lip trackball (56-0100-11HL). It is almost a perfect fit. The bolt pattern is identical, but I had to widen the cutout for the ball by maybe a millimeter.
 
 The plan was to use 2 Arduino Pro Micros. One for the P1 controls (joystick, buttons, spinner and trackball) and the other for the P2 controls (joystick, buttons and spinner). I looked at [Sorg's paddle adaptor](https://github.com/MiSTer-devel/Retro-Controllers-USB-MiSTer) and [Niels3RT's SpinJoy adaptor](https://github.com/Niels3RT/SpinJoy) felt I understood them and started to code.
 
