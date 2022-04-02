@@ -54,6 +54,8 @@ PA0, PA9, PA10, PB0, PC14, PC13
 
 This order is important to note. You will need it to properly map an input on the microcontroller to a device input in the user space Linux driver.
 
+**Warning:** PA0 and PB5 on the STM32F411 are NOT 5v tolerant. Do NOT use them as rotary encoder inputs. They are 5v tolerant on the STM32F401.
+
 # Control mapping
 
 The JSON format is as follows:
@@ -175,13 +177,13 @@ Here is picture of the almost finished PCB. Sadly I found out too late I couldn'
 
 # My setup
 
-Fight stick: Micro Center fightstick (https://www.microcenter.com/product/623128/atari-arcade-fightstick-with-trackball-usb-dual-joystick-2-player-game-controller)
+Fight stick: [Micro Center's Atari Arcade Fightstick with Trackball](https://www.microcenter.com/product/623128/atari-arcade-fightstick-with-trackball-usb-dual-joystick-2-player-game-controller)
 
-Spinners: UltiMarc SpinTrak Rotary Control (https://www.ultimarc.com/trackballs-and-spinners/spinners/spintrak)
+Spinners: [UltiMarc SpinTrak Rotary Control](https://www.ultimarc.com/trackballs-and-spinners/spinners/spintrak)
 
-Trackball: SuzoHapp high lip trackball (https://na.suzohapp.com/products/trackballs/56-0100-11HL)
+Trackball: [SuzoHapp High Lip Trackball](https://na.suzohapp.com/products/trackballs/56-0100-11HL)
 
-MCU: WeAct Studio STM32F411CE (https://github.com/WeActTC/MiniSTM32F4x1)
+MCU: [WeAct Studio STM32F411CE](https://github.com/WeActTC/MiniSTM32F4x1)
 
 # History
 
@@ -191,7 +193,7 @@ When MiSTer's Atari 7800 core was updated with spinner support I thought it woul
 
 The trackball that comes with the Micro Center fight stick had its own embedded controller. To minimize the number of USB cables I replaced the 2.5" trackball with a SuzoHapp 3" high lip trackball (56-0100-11HL). It is almost a perfect fit. The bolt pattern is identical, but I had to widen the ball opening by maybe a millimeter.
 
-The plan was to use 2 Arduino Pro Micros. One for the P1 controls (joystick, buttons, spinner and trackball) and the other for the P2 controls (joystick, buttons and spinner). I looked at Sorg's paddle adaptor (https://github.com/MiSTer-devel/Retro-Controllers-USB-MiSTer) and Niels3RT's SpinJoy project (https://github.com/Niels3RT/SpinJoy) felt I understood them and started to code.
+The plan was to use 2 Arduino Pro Micros. One for the P1 controls (joystick, buttons, spinner and trackball) and the other for the P2 controls (joystick, buttons and spinner). I looked at [Sorg's paddle adaptor](https://github.com/MiSTer-devel/Retro-Controllers-USB-MiSTer) and [Niels3RT's SpinJoy adaptor](https://github.com/Niels3RT/SpinJoy) felt I understood them and started to code.
 
 I discovered not all the Arduino Pro Micro's GPIO pins can be interruptible. Because of this limitation the Arduino Pro Micro doesn't have enough interruptible pins to support a spinner and trackball at the same time. I could have used three Arduino Pro Micros, but it felt excessive. So I started looking for a single microcontroller solution.
 
@@ -215,6 +217,6 @@ There are other STM32 boards that have a bunch of GPIO pins > 70. Support for th
 
 # Credits
 
-Niels3RT's SpinJoy project (https://github.com/Niels3RT/SpinJoy) for a simple but effective debounce algorithm.
+[Niels3RT's SpinJoy adaptor](https://github.com/Niels3RT/SpinJoy) for a simple but effective debounce algorithm.
 
-Sorg's paddle adaptor project (https://github.com/MiSTer-devel/Retro-Controllers-USB-MiSTer) for being the basis for Niels3RT project and starting it all.
+[Sorg's paddle adaptor](https://github.com/MiSTer-devel/Retro-Controllers-USB-MiSTer) for being the basis of Niels3RT project and MiSTer.
