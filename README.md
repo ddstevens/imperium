@@ -52,7 +52,7 @@ The bit array sent to the Linux driver would look like this:
 
 PA0, PA9, PA10, PB0, PC14, PC13
 
-This order is important to note. You will need it to properly map an input on the microcontroller to a device input in the user space Linux driver.
+This order is important to note. You will need it to properly map an input on the microcontroller to a device input in the user space Linux driver's JSON config file.
 
 **Warning:** PA0 and PB5 on the STM32F411 are NOT 5v tolerant. Do NOT use them as rotary encoder inputs. They are 5v tolerant on the STM32F401.
 
