@@ -22,7 +22,7 @@ If your microcontroller has enough pins Imperium can support the following:
 
 The Arduino code grabs the state of all switches and encoders. It packs the data into a raw HID report and sends it to a user space Linux driver.
 
-The user space Linux driver on start up loads a JSON config file. The config file defines the input devices to create, how they are grouped, and how the data from the raw HID report should be split between the input devices. The input devices are created, and the driver waits for data. As data is received it is splt and sent to the appropriate input devices.
+The user space Linux driver on start up loads a JSON config file. The config file defines the input devices to create, how they are grouped, and how the data from the raw HID report should be split between the input devices. The input devices are created, and the driver waits for data. As data is received it is split and sent to the appropriate input devices.
 
 # Hardware configuration
 
@@ -93,7 +93,7 @@ When defining inputs:
 
 **Value** = Depending on the **Type** it is either:
 - If **Type** is EV_KEY
-  - **Value** is the position received from the microcontroller (0-63)
+  - **Value** is the position of the bit representing the state of the input (0-63)
 - If **Type** is EV_REL or EV_ABS
   - **Value** is the index of the encoder (0-7)
     
